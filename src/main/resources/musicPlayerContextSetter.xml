@@ -13,6 +13,8 @@
 
     <bean id="musicPlayer" class="by.kazak.spring.musicApp.beans.MusicPlayer">
         <property name="music" ref="musicBean"/>
+        <property name="name" value="Poweramp"/>
+        <property name="volume" value="50"/>
     </bean>
 
 </beans>
