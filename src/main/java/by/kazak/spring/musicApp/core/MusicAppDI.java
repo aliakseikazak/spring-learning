@@ -1,6 +1,6 @@
-package by.kazak.spring.musicPlayer.core;
+package by.kazak.spring.musicApp.core;
 
-import by.kazak.spring.musicPlayer.beans.MusicPlayer;
+import by.kazak.spring.musicApp.beans.MusicPlayer;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MusicAppDI {

@@ -1,4 +1,4 @@
-package by.kazak.spring.musicPlayer.beans;
+package by.kazak.spring.musicApp.beans;
 
 public class RockMusic implements Music {
 
