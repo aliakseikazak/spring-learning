@@ -1,7 +1,5 @@
 package by.kazak.spring.musicPlayer.beans;
 
-import by.kazak.spring.musicPlayer.beans.Music;
-
 public class MusicPlayer {
         private Music music;
 
