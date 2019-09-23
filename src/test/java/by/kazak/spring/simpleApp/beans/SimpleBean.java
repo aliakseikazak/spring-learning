@@ -1,4 +1,4 @@
-package com.epam.spring.beans;
+package by.kazak.spring.simpleApp.beans;
 
 public class SimpleBean {
     private String name;
