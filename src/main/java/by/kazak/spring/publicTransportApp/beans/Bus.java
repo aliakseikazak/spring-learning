@@ -2,7 +2,7 @@ package by.kazak.spring.publicTransportApp.beans;
 
 import org.springframework.stereotype.Component;
 
-@Component("bus")
+@Component
 public class Bus implements Transport {
     private final static String TIME = "40 minutes";
 

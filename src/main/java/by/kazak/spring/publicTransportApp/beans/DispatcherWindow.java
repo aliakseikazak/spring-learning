@@ -1,22 +1,26 @@
 package by.kazak.spring.publicTransportApp.beans;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.stereotype.Component;
 
+@Component
 public class DispatcherWindow {
-    private Transport transport;
+    private static final int MIN = 1;
+    private static final int MAX = 100;
+    private int windowNumber;
+    private Dispatcher dispatcher;
 
-    public DispatcherWindow () {}
-
-    public DispatcherWindow (Transport transport) {
-        this.transport = transport;
+    public DispatcherWindow (Dispatcher dispatcher) {
+        this.windowNumber = getRandomNumberInRange();
+        this.dispatcher = dispatcher;
     }
 
-    private void getTravelInfo (Transport transport) {
-        System.out.println(String.format("[INFO] Travel time using %s", transport.getTravelTime()));
+    private static int getRandomNumberInRange () {
+        return (int) (Math.random() * ((MIN - MAX) + 1)) + MIN;
     }
 
-    public void viewInfo () {
-        getTravelInfo(transport);
+    @Override
+    public String toString () {
+        return "DispatcherWindow{" + "windowNumber=" + windowNumber + ", dispatcher's info=" + dispatcher.viewInfo() +
+               '}';
     }
 }
