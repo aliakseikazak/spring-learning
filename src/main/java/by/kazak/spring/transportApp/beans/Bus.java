@@ -1,12 +1,12 @@
-package by.kazak.spring.publicTransportApp.beans;
+package by.kazak.spring.transportApp.beans;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class Taxi implements Transport {
-    private final static String TIME = "20 minutes";
+public class Bus implements PublicTransport {
+    private final static String TIME = "40 minutes";
 
-    public Taxi () {
+    public Bus () {
     }
 
     @Override

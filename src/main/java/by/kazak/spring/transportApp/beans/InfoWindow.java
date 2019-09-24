@@ -1,4 +1,4 @@
-package by.kazak.spring.publicTransportApp.beans;
+package by.kazak.spring.transportApp.beans;
 
 import org.springframework.stereotype.Component;
 

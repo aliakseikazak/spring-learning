@@ -1,6 +1,6 @@
-package by.kazak.spring.publicTransportApp.core;
+package by.kazak.spring.transportApp.core;
 
-import by.kazak.spring.publicTransportApp.beans.InfoWindow;
+import by.kazak.spring.transportApp.beans.InfoWindow;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class PublicTransportApp {
