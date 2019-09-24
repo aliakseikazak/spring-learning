@@ -1,9 +1,11 @@
 package by.kazak.spring.transportApp.beans;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Taxi implements PublicTransport{
+@Scope ("prototype")
+public class Taxi implements PublicTransport {
     private final static String TIME = "20 minutes";
 
     public Taxi () {

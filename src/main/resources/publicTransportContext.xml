@@ -9,4 +9,6 @@
 
     <context:component-scan base-package="by.kazak.spring.transportApp.beans"/>
 
+    <context:property-placeholder location="classpath:transport.properties"/>
+
 </beans>
