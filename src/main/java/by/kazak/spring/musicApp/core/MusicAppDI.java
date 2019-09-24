@@ -10,6 +10,8 @@ public class MusicAppDI {
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusic();
 
+        System.out.println(musicPlayer.toString());
+
         context.close();
     }
 }

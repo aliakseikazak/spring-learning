@@ -31,12 +31,16 @@ public class MusicPlayer {
         this.volume = volume;
     }
 
+    private void playSong (Music music) {
+        System.out.println(String.format("Playing %s", music.getSong()));
+    }
+
     public void setMusic (Music music) {
         this.music = music;
     }
 
     public void playMusic () {
-        System.out.println(String.format("Playing %s", music.getSong()));
+        playSong(music);
     }
 
     public void setMusicList (List<Music> musicList) {
@@ -45,7 +49,7 @@ public class MusicPlayer {
 
     public void playMusicList () {
         for (Music music : musicList) {
-            System.out.println(String.format("Playing %s", music.getSong()));
+            playSong(music);
         }
     }
 
