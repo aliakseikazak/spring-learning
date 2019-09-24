@@ -1,4 +1,4 @@
-package by.kazak.spring.publicTransportApp.beans;
+package by.kazak.spring.transportAppWithEnum.beans;
 
 import java.util.List;
 

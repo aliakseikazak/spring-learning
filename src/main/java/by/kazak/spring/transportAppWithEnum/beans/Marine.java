@@ -1,4 +1,4 @@
-package by.kazak.spring.publicTransportApp.beans;
+package by.kazak.spring.transportAppWithEnum.beans;
 
 import org.springframework.stereotype.Component;
 
@@ -6,16 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class Ground implements Transport {
+public class Marine implements Transport {
     private List<String> transports = new ArrayList<>();
 
     {
-        transports.add("Bus");
-        transports.add("Taxi");
-        transports.add("TrolleyBus");
+        transports.add("Boat");
+        transports.add("Ship");
+        transports.add("Submarine");
     }
 
-    public Ground () {
+    public Marine () {
     }
 
     @Override
