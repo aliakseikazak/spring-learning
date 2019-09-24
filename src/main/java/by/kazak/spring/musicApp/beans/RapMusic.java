@@ -7,6 +7,6 @@ public class RapMusic implements Music {
 
     @Override
     public String getSong () {
-        return "Lose yourself";
+        return String.format("%s: Eminem - Lose yourself", this.getClass().getSimpleName());
     }
 }

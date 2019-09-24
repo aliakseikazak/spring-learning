@@ -7,6 +7,6 @@ public class RockMusic implements Music {
 
     @Override
     public String getSong () {
-        return "Highway to hell";
+        return String.format("%s: AC/DC - Highway to hell", this.getClass().getSimpleName());
     }
 }

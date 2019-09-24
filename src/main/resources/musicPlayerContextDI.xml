@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="musicBean"
-          class="by.kazak.spring.musicApp.beans.RapMusic">
+          class="by.kazak.spring.musicApp.beans.RockMusic">
     </bean>
 
     <bean id="musicPlayer" class="by.kazak.spring.musicApp.beans.MusicPlayer">

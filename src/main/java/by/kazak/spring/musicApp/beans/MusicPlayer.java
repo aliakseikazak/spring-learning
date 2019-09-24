@@ -1,17 +1,17 @@
 package by.kazak.spring.musicApp.beans;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MusicPlayer {
-    private Music music;
     private String name;
     private int volume;
+    private Music music;
+    private List<Music> musicList = new ArrayList<>();
 
     public MusicPlayer () {}
 
     public MusicPlayer (Music music) {
-        this.music = music;
-    }
-
-    public void setMusic (Music music) {
         this.music = music;
     }
 
@@ -31,8 +31,22 @@ public class MusicPlayer {
         this.volume = volume;
     }
 
+    public void setMusic (Music music) {
+        this.music = music;
+    }
+
     public void playMusic () {
-        System.out.println(String.format("Playing: %s", music.getSong()));
+        System.out.println(String.format("Playing %s", music.getSong()));
+    }
+
+    public void setMusicList (List<Music> musicList) {
+        this.musicList = musicList;
+    }
+
+    public void playMusicList () {
+        for (Music music : musicList) {
+            System.out.println(String.format("Playing %s", music.getSong()));
+        }
     }
 
     @Override
