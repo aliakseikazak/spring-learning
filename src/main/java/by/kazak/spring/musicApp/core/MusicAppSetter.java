@@ -10,7 +10,7 @@ public class MusicAppSetter {
         MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
         musicPlayer.playMusicList();
 
-        System.out.println(musicPlayer.toString());
+        System.out.println(musicPlayer);
 
         context.close();
     }
