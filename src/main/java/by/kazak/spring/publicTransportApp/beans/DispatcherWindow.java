@@ -32,7 +32,7 @@ public class DispatcherWindow {
     }
 
     private void getTravelInfo (Transport transport) {
-        System.out.println(String.format("Information %s", transport.getTravelTime()));
+        System.out.println(String.format("[INFO] Travel time using %s", transport.getTravelTime()));
     }
 
     public void setTransport (Transport transport) {

@@ -1,13 +1,12 @@
 package by.kazak.spring.publicTransportApp.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component("bus")
 public class Bus implements Transport {
     private final static String TIME = "40 minutes";
 
-    private Bus () {
-    }
-
-    public static Bus getBus () {
-        return new Bus();
+    public Bus () {
     }
 
     public void init () {
