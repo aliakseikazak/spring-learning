@@ -3,13 +3,13 @@ package by.kazak.spring.publicTransportApp.beans;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DispatcherWindow {
+public class InfoWindow {
     private static final int MIN = 1;
     private static final int MAX = 100;
     private int windowNumber;
     private Dispatcher dispatcher;
 
-    public DispatcherWindow (Dispatcher dispatcher) {
+    public InfoWindow (Dispatcher dispatcher) {
         this.windowNumber = getRandomNumberInRange();
         this.dispatcher = dispatcher;
     }
@@ -20,7 +20,6 @@ public class DispatcherWindow {
 
     @Override
     public String toString () {
-        return "DispatcherWindow{" + "windowNumber=" + windowNumber + ", dispatcher's info=" + dispatcher.viewInfo() +
-               '}';
+        return "InfoWindow{" + "windowNumber=" + windowNumber + ", dispatcher's info=" + dispatcher.viewInfo() + '}';
     }
 }
