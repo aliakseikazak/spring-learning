@@ -6,6 +6,9 @@ import org.springframework.stereotype.Service;
 public class SimpleService {
 
     public String greet (String name) {
-        return String.format("Hello, %s!", name);
+        String message = String.format("Hello, %s!", name);
+        System.out.println(message);
+        //throw new RuntimeException("Attention, here exception!"); // for calling afterThrowing method
+        return message;
     }
 }

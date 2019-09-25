@@ -9,7 +9,7 @@ public class MainApp {
         try (var c = new AnnotationConfigApplicationContext(ProjectConfig.class)) {
             SimpleService service = c.getBean(SimpleService.class);
             String result = service.greet("Aliaksei");
-            System.out.println(result);
+            System.out.println(String.format("Result: %s", result));
         }
     }
 }
